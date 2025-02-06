@@ -106,7 +106,7 @@
                 <?php $is_logged_in = isset($_SESSION['user_id']); ?>
                 <i class="fas fa-user-circle profile-icon"></i>
                 <div class="profile-dropdown">
-                    <span class="dropdown-item-text px-3 fw-bold"><?php echo $user_name; ?></span>
+                    <span class="dropdown-item-text px-3 fw-bold">
                     <div class="dropdown-divider"></div>
                     <?php if ($is_logged_in): ?>
                         <a href="profile.php">My Profile</a>
