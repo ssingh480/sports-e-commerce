@@ -75,30 +75,13 @@ $total_price = 0;
 </head>
 <body>
 
-<?php include 'header.php'; ?>
+<?php include 'n_header.php'; ?>
 
 <div class="container my-5">
     <div class="checkout-container">
         <h2 class="text-center mb-4">Order Summary</h2>
 
-        <!-- Order Summary -->
-        <div class="product-summary">
-            <?php foreach ($cart_items as $item) : 
-                $total_price += $item['price'] * $item['quantity'];
-            ?>
-                <div class="d-flex justify-content-between align-items-center mb-3">
-                    <div class="d-flex align-items-center">
-                        <img src="<?= $item['image'] ?>" alt="<?= $item['name'] ?>">
-                        <div class="ms-3">
-                            <h5><?= $item['name'] ?></h5>
-                            <p>$<?= number_format($item['price'], 2) ?> x <?= $item['quantity'] ?></p>
-                        </div>
-                    </div>
-                    <strong>$<?= number_format($item['price'] * $item['quantity'], 2) ?></strong>
-                </div>
-            <?php endforeach; ?>
-        </div>
-
+        
         <hr>
 
         <!-- Total Price -->

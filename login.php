@@ -77,7 +77,7 @@ include_once("header.php");
                 <input class="form-check-input" type="checkbox" name="remember">
                 <label class="form-check-label">Remember me</label>
             </div>
-            <button type="submit" class="btn form-control btn-custom">Login</button>
+            <button type="submit" class="btn form-control btn-custom"> <a href="n_home.php">Login</a></button>
         </form>
         <p class="text-center mt-3">
             Don't have an account? <a href="register.php">Register</a>

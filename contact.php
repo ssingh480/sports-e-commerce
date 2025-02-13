@@ -100,7 +100,7 @@ session_start();
 </head>
 <body>
 
-<?php include 'header.php'; ?>
+<?php include 'n_header.php'; ?>
 
 <!-- Dark Mode Toggle -->
 <div class="dark-mode-toggle text-primary">

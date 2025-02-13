@@ -82,7 +82,7 @@ session_start();
 </head>
 <body>
 
-<?php include 'header.php'; ?>
+<?php include 'n_header.php'; ?>
 
 <!-- Hero Section -->
 <section class="hero">

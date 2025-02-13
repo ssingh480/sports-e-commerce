@@ -151,7 +151,21 @@ include_once("header.php");
                 },
                 terms: {
                     required: "You must agree to the terms"
+                },
+                errorPlacement: function (error, element) {
+                 if (element.attr("id") === "pwd") {
+                 error.insertAfter(element.closest(".input-group")); // Places error below the input-group
+                }   else {
+                error.insertAfter(element);
                 }
+                },
+                highlight: function (element) {
+                 $(element).addClass("is-invalid");
+                },
+                unhighlight: function (element) {
+                 $(element).removeClass("is-invalid");
+                }
+
             }
         });
 
